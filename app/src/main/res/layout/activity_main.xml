@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#393f4d "
+    >
+
+    <LinearLayout
+        android:id="@+id/adContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+
+        />
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/myName"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/name" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:background="#364E59"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+
+            >
+
+            <TextView
+                android:layout_width="316dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="#393f4d"
+                android:fontFamily="@font/regular"
+                android:paddingLeft="30dp"
+                android:text="Enter Your Nickname : "
+                android:textColor="#FFEB3B"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:fontFamily="@font/regular"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="48dp"
+            android:textColor="#fff"
+            android:textColorHint="#65EFDA35"
+            android:textSize="26sp"
+
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bottom_curved"
+        android:fontFamily="@font/regular"
+        android:gravity="center"
+        android:text="Next >"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:textSize="21sp" />
+
+
+</LinearLayout>
